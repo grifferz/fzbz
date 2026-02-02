@@ -1,4 +1,4 @@
-# FizzBuss with some Divan
+# FizzBuzz with some Divan
 
 ## About
 
@@ -116,16 +116,27 @@ background.)
 In the `flamegraphs/` directory you'll find flamegraphs of three of the
 implementations.
 
+Try opening each raw SVG file in your browser to benefit from hover text on
+each function's cell.)
+
 ### `mod_then_match`
+
+![mod_then_match](flamegraphs/mod_then_match_flamegraph.svg "mod_then_match")
 
 ### `only_using_mod`
 
+![only_using_mod](flamegraphs/only_using_mod_flamegraph.svg "only_using_mod")
+
 ### `only_using_mod_with_early_return`
 
-## Copyright
+![only_using_mod_with_early_return](flamegraphs/only_using_mod_with_early_return_flamegraph.svg "only_using_mod_with_early_return")
+
+## License
 
 Since almost all of the implementations are from a [CC BY-SA] video by Andy
 Balaam then this repository probably should be as well. I'm not sure that what
 little I have added is actually copyrightable being mostly scaffold, comments
-and test/benchmarking harness, but if it is then it also probably should be CC
-BY-SA.
+and test/benchmarking harness, but if it is then it also probably should be
+licensed CC BY-SA.
+
+[CC BY-SA]: https://creativecommons.org/licenses/by-sa/4.0/
