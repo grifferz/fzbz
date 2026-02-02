@@ -70,7 +70,7 @@ pub fn early_return_before_mod(n: i32) -> Answer {
     }
 }
 
-// Like `early_return_before_mod` but check string contents by doing one loop through it, inctead
+// Like `early_return_before_mod` but check string contents by doing one loop through it, instead
 // of multiple `contains()` checks.
 pub fn single_string_scan(n: i32) -> Answer {
     let n_str = n.to_string();
