@@ -117,7 +117,7 @@ In the `flamegraphs/` directory you'll find flamegraphs of three of the
 implementations.
 
 Try opening each raw SVG file in your browser to benefit from hover text on
-each function's cell.)
+each function's cell.
 
 ### `mod_then_match`
 
