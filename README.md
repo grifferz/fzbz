@@ -1,9 +1,9 @@
-# FizzBuzz with some Divan
+# Fizz buzz with some Divan
 
 ## About
 
 I recently watched [Andy Balaam's FizzBuzz video] where he implemented a
-version of FizzBuzz in Rust in a test-driven manner, and then tries a few
+version of Fizz buzz in Rust in a test-driven manner, and then tries a few
 changes to make the implementation more pleasing and possibly more performant.
 
 Throughout, Andy does stress that it's not a good idea to spend time on
@@ -33,7 +33,7 @@ what's here. See the post for a fuller picture.
 ## Usage
 
 There isn't much to actually use directly as a program here. Once compiled
-with `cargo run` it'll do this brand of FizzBuzz up to 2 million with one of
+with `cargo run` it'll do this brand of Fizz buzz up to 2 million with one of
 the implementations and then print out a summary:
 
 ```txt
@@ -51,8 +51,8 @@ Fizzbuzz(2000000) resulted in:
 ## Implementations
 
 To understand how the implementations came about it would be best to watch
-Andy's video first, but briefly: each major modification he made to his
-FizzBuzz function is represented as a different function in `src/lib.rs`. The
+Andy's video first, but briefly: each major modification he made to his Fizz
+buzz function is represented as a different function in `src/lib.rs`. The
 implementations are listed in the order that their changes are discussed in
 Andy's video.
 
@@ -64,7 +64,7 @@ implementations can be run through a set of unit tests that you'll find in
 
 The Divan crate is used to provide benchmarking insight. The benchmarks are
 defined in `benchmarks/fizzbuzz.rs`; it's just a benchmark function for each
-implementation that again does a FizzBuzz up to 2 million.
+implementation that again does a Fizz buzz up to 2 million.
 
 Run `cargo benchmark` to do this on your own machine. On my 8 year old rather
 slow desktop (Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz) I get:
@@ -99,10 +99,10 @@ fizzbuzz                                    fastest       │ slowest       │ 
 All of the implementations are currently single threaded so will only use one
 CPU core.
 
-## Flamegraphs
+## Flame graphs
 
 After benchmarking the implementations from the video I decided to try
-generating a flamegraph. This was very easily done with:
+generating a flame graph. This was very easily done with:
 
 ```txt
 $ cargo install flamegraph
@@ -113,7 +113,7 @@ $ sed -i 's/eeeeee/111111/g; s/eeeeb0/111100/g' flamegraph.svg
 (The `sed` is because I have some vision difficulties and prefer a dark
 background.)
 
-In the `flamegraphs/` directory you'll find flamegraphs of three of the
+In the `flamegraphs/` directory you'll find flame graphs of three of the
 implementations.
 
 Try opening each raw SVG file in your browser to benefit from hover text on
