@@ -26,9 +26,14 @@ them.
 
 ### Best to read the article (after watching the video)
 
-There's a blog post discussing all this further; this source repository is
+There's [a blog post] discussing all this further; this source repository is
 mainly for reference for that post, and this file just to briefly explain
-what's here. See the post for a fuller picture.
+what's here. [See the post for a fuller picture].
+
+[a blog post]:
+  https://strugglers.net/posts/2026/rusty-fizzbuzz-with-some-divan/
+[See the post for a fuller picture]:
+  https://strugglers.net/posts/2026/rusty-fizzbuzz-with-some-divan/
 
 ## Usage
 
